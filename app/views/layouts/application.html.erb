@@ -7,9 +7,31 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+
+
 
   <body>
+    <body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+
+
+					<!-- Nav -->
+						<nav id="nav">
+                 <div class="mar"
+								<a href="index.html">Home</a>
+								<a href="index.html">Dropdown</a>
+								<a href="left-sidebar.html">Left Sidebar</a>
+								<a href="right-sidebar.html">Right Sidebar</a>
+								<a href="no-sidebar.html">No Sidebar</a>
+                </div>
+						</nav>
+
+				</div>
+
     <%= yield %>
   </body>
 </html>
