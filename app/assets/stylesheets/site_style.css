@@ -11,15 +11,22 @@
     cursor: default;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-
-
+    padding: 30px;
 }
 
  #nav a{
    text-decoration: none;
    padding:  50px;
    color: white;
+}
+
+
+.footer{
+  color:white;
+  background-color: #2b252c;
+  height: 200px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
 }

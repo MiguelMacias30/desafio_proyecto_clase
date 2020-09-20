@@ -10,5 +10,9 @@ class PagesController < ApplicationController
     end
 
     def test
-    end 
+    end
+
+    def about_us
+    end
+
 end

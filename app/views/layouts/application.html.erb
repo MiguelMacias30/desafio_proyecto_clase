@@ -7,10 +7,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
 
-  <body>
     <body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 
@@ -21,17 +21,25 @@
 
 					<!-- Nav -->
 						<nav id="nav">
-                 <div class="mar"
-								<a href="index.html">Home</a>
-								<a href="index.html">Dropdown</a>
-								<a href="left-sidebar.html">Left Sidebar</a>
-								<a href="right-sidebar.html">Right Sidebar</a>
-								<a href="no-sidebar.html">No Sidebar</a>
-                </div>
+              <div class="mar"
+							<%= link_to "index", root_path%>
+							<%= link_to "test", pages_test_path%>
+							<%= link_to "login", users_login_path%>
+							<%= link_to "about_us", pages_about_us_path%>
+              </div>
 						</nav>
 
 				</div>
 
     <%= yield %>
+
+    <footer>
+      <div class="footer"
+        <a>Untitled.All rights reserved</a>
+        <a>Design: HTML5 UP</a>
+        <a>Demo images: Michael Domaradzki</a>
+      </div>
+
+    </footer>
   </body>
 </html>
